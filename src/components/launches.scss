@@ -1,0 +1,68 @@
+.datatable {
+  .p-paginator {
+    .p-paginator-current {
+      margin-left: auto;
+    }
+  }
+
+  .p-progressbar {
+    height: 0.5rem;
+    background-color: #d8dadc;
+
+    .p-progressbar-value {
+      background-color: #607d8b;
+    }
+  }
+
+  .p-datepicker {
+    min-width: 25rem;
+
+    td {
+      font-weight: 400;
+    }
+  }
+
+  .p-datatable.p-datatable-launches {
+    .p-datatable-header {
+      padding: 1rem;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+
+    .p-paginator {
+      padding: 1rem;
+    }
+
+    .p-datatable-thead > tr > th {
+      text-align: left;
+    }
+
+    .p-dropdown-label:not(.p-placeholder) {
+      text-transform: uppercase;
+    }
+
+    .launch-badge {
+      border-radius: 2px;
+      padding: 0.25em 0.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: .3px;
+    }
+
+    .status-failed {
+      background-color: #ffcdd2;
+      color: #c63737;
+    }
+
+    .status-success {
+      background-color: #c8e6c9;
+      color: #256029;
+    }
+
+    .status-upcoming {
+      background-color: #b3e5fc;
+      color: #23547b;
+    }
+  }
+}
