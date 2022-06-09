@@ -10,6 +10,7 @@ export const useFetchLaunches = () => {
         (async () => {
             const launchesData = await apiService.fetchLaunches();
             const normalizedLaunches = launchesData.map(({
+                id,
                 name,
                 details,
                 date_utc,
@@ -17,6 +18,7 @@ export const useFetchLaunches = () => {
                 success,
                 links
             }) => ({
+                    id,
                     name,
                     details,
                     status: getStatus({upcoming, success}),

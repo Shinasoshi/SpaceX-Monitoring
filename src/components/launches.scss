@@ -40,29 +40,5 @@
     .p-dropdown-label:not(.p-placeholder) {
       text-transform: uppercase;
     }
-
-    .launch-badge {
-      border-radius: 2px;
-      padding: 0.25em 0.5rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 12px;
-      letter-spacing: .3px;
-    }
-
-    .status-failed {
-      background-color: #ffcdd2;
-      color: #c63737;
-    }
-
-    .status-success {
-      background-color: #c8e6c9;
-      color: #256029;
-    }
-
-    .status-upcoming {
-      background-color: #b3e5fc;
-      color: #23547b;
-    }
   }
 }

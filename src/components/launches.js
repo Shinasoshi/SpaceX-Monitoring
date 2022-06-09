@@ -1,6 +1,7 @@
 import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";
 import {InputText} from "primereact/inputtext";
+import {useNavigate} from "react-router-dom";
 import {useFilters} from "../hooks/useFilters";
 import {useFetchLaunches} from "../hooks/useFetchLaunches";
 import {
@@ -16,6 +17,7 @@ import './launches.scss';
 const Launches = () => {
     const {loading, launches} = useFetchLaunches();
     const {filters, globalFilterValue, onGlobalFilterChange} = useFilters();
+    const navigate = useNavigate();
 
     const header = () => (
         <div className="d-flex justify-content-between align-items-center flex-wrap">
@@ -46,6 +48,7 @@ const Launches = () => {
                     rows={10}
                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
                     rowsPerPageOptions={[10, 25, 50]}
+                    onRowClick={event => navigate(`${event.data.id}`)}
                     emptyMessage="No launches found."
                 >
                     <Column
